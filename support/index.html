@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memoria — Assistance</title>
+<meta name="description" content="Assistance de l'application iOS Memoria : contact, questions fréquentes, sauvegarde et achats.">
+<style>
+  :root {
+    --bg: #F7F5F1;
+    --surface: #FFFFFF;
+    --text: #161310;
+    --text-secondary: #6E6457;
+    --accent: #FF5A3C;
+    --separator: #EBE7DF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0C0B09;
+      --surface: #1C1A16;
+      --text: #F7F3EC;
+      --text-secondary: #A89E90;
+      --accent: #FF6F4D;
+      --separator: #312D26;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+  header { border-bottom: 1px solid var(--separator); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  .brand { font-size: 1.05rem; font-weight: 700; letter-spacing: 0.02em; margin: 0 0 1.25rem; }
+  .brand span { color: var(--accent); }
+  nav { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .lang-btn {
+    font: inherit; font-size: 0.9rem; padding: 0.35rem 0.8rem;
+    border: 1px solid var(--separator); border-radius: 999px;
+    background: var(--surface); color: var(--text-secondary); cursor: pointer;
+    transition: color 0.18s ease, border-color 0.18s ease;
+  }
+  .lang-btn:hover { color: var(--text); }
+  .lang-btn.is-active { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 1rem; letter-spacing: -0.01em; }
+  h2 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin: 2.25rem 0 0.5rem; font-weight: 700; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 0.35rem; }
+  p { margin: 0 0 1rem; }
+  .lede { color: var(--text-secondary); }
+  .contact {
+    background: var(--surface); border: 1px solid var(--separator);
+    border-radius: 0.9rem; padding: 1.25rem 1.4rem; margin: 1.5rem 0 0;
+  }
+  .contact p { margin: 0; }
+  .contact a { font-weight: 600; }
+  a { color: var(--accent); }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--separator); color: var(--text-secondary); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="brand">Memoria<span> — Carnet de voyage</span></p>
+    <nav aria-label="Langue">
+      <button type="button" class="lang-btn is-active" data-lang="fr">Français</button>
+      <button type="button" class="lang-btn" data-lang="en">English</button>
+    </nav>
+  </header>
+
+  <section class="lang" id="lang-fr" lang="fr">
+    <h1>Assistance</h1>
+    <p class="lede">Une question, un problème, une suggestion : écrivez-nous, une vraie personne vous répond.</p>
+
+    <div class="contact">
+      <p><a href="mailto:Memoria.amosiagroup@gmail.com">Memoria.amosiagroup@gmail.com</a></p>
+    </div>
+
+    <h2>Questions fréquentes</h2>
+
+    <h3>Où sont stockés mes souvenirs ?</h3>
+    <p>Uniquement sur votre iPhone. Memoria n'a ni compte utilisateur, ni serveur : vos photos, vidéos et textes ne quittent jamais l'appareil. L'application fonctionne intégralement hors ligne.</p>
+
+    <h3>Comment sauvegarder mes carnets ?</h3>
+    <p>Ouvrez le menu latéral et touchez « Exporter mes données » : Memoria produit un fichier unique que vous enregistrez où vous voulez (Fichiers, iCloud Drive, Mail, AirDrop). Juste en dessous, « Importer une sauvegarde » permet de le recharger, sur ce téléphone ou sur un nouveau. La ligne indique la date de votre dernière sauvegarde et change de couleur au bout de 90 jours sans export.</p>
+
+    <h3>Je change de téléphone, comment transférer mes données ?</h3>
+    <p>Depuis l'ancien appareil, menu latéral → « Exporter mes données ». Sur le nouveau, menu latéral → « Importer une sauvegarde ». Comme rien n'est stocké en ligne, c'est le seul chemin de transfert — pensez à le faire avant d'effacer l'ancien téléphone.</p>
+
+    <h3>J'ai supprimé un souvenir par erreur</h3>
+    <p>Il est dans la corbeille de l'app, où il reste 30 jours avant suppression définitive. Ouvrez la corbeille depuis les Réglages pour le restaurer.</p>
+
+    <h3>Que débloque Memoria Premium ?</h3>
+    <p>L'export PDF de tous vos livres sans filigrane, la personnalisation des couvertures et des mises en page, et les albums PDF de vos dossiers de moments. C'est un paiement unique, sans abonnement. Feuilleter votre livre dans l'app reste gratuit.</p>
+
+    <h3>J'ai réinstallé l'app et Premium a disparu</h3>
+    <p>Ouvrez l'écran Memoria Premium et touchez « Restaurer un achat précédent », en étant connecté au même identifiant Apple qu'au moment de l'achat. Les livres achetés à l'unité, eux, sont conservés dans vos sauvegardes plutôt que restaurés par l'App Store.</p>
+
+    <h3>J'ai payé mais rien ne s'est débloqué</h3>
+    <p>Fermez puis rouvrez l'application : les paiements différés (validation par un parent, problème réseau) sont livrés au lancement suivant. Si rien ne change, écrivez-nous avec la date de l'achat, nous réglons ça.</p>
+
+    <h3>Pourquoi l'app demande l'accès à ma position ?</h3>
+    <p>Uniquement pour situer vos souvenirs et tracer le trajet de vos carnets sur une carte. Ces coordonnées restent sur votre téléphone. Vous pouvez couper l'option à tout moment dans les Réglages de l'app, qui reste pleinement utilisable sans elle.</p>
+
+    <h3>Comment supprimer toutes mes données ?</h3>
+    <p>Désinstallez l'application : tout étant local, cela efface l'intégralité de vos données. Pensez à exporter une sauvegarde avant si vous souhaitez les conserver.</p>
+
+    <h2>Confidentialité</h2>
+    <p>Memoria ne collecte aucune donnée. Le détail est expliqué dans la <a href="../">politique de confidentialité</a>.</p>
+  </section>
+
+  <section class="lang" id="lang-en" lang="en" hidden>
+    <h1>Support</h1>
+    <p class="lede">A question, a problem, a suggestion: write to us and a real person will answer.</p>
+
+    <div class="contact">
+      <p><a href="mailto:Memoria.amosiagroup@gmail.com">Memoria.amosiagroup@gmail.com</a></p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>Where are my memories stored?</h3>
+    <p>Only on your iPhone. Memoria has no user account and no server: your photos, videos and text never leave the device. The app works fully offline.</p>
+
+    <h3>How do I back up my journals?</h3>
+    <p>Open the side menu and tap "Export my data": Memoria produces a single file you can save anywhere (Files, iCloud Drive, Mail, AirDrop). Just below, "Import a backup" loads it back, on this phone or a new one. The row shows the date of your last backup and changes colour after 90 days without one.</p>
+
+    <h3>I'm switching phones — how do I transfer my data?</h3>
+    <p>On the old device, side menu → "Export my data". On the new one, side menu → "Import a backup". Since nothing is stored online, this is the only transfer path — do it before erasing the old phone.</p>
+
+    <h3>I deleted a memory by mistake</h3>
+    <p>It's in the app's trash, where it stays for 30 days before permanent deletion. Open the trash from Settings to restore it.</p>
+
+    <h3>What does Memoria Premium unlock?</h3>
+    <p>Watermark-free PDF export of all your books, cover and layout customization, and PDF albums of your moment folders. It's a one-time payment, no subscription. Flipping through your book in the app stays free.</p>
+
+    <h3>I reinstalled the app and Premium is gone</h3>
+    <p>Open the Memoria Premium screen and tap "Restore a previous purchase", signed in with the same Apple Account used for the purchase. Single books, on the other hand, travel in your backups rather than being restored by the App Store.</p>
+
+    <h3>I paid but nothing unlocked</h3>
+    <p>Close and reopen the app: deferred payments (parental approval, network issues) are delivered on the next launch. If nothing changes, write to us with the purchase date and we'll sort it out.</p>
+
+    <h3>Why does the app ask for my location?</h3>
+    <p>Only to place your memories and draw your journal's route on a map. Those coordinates stay on your phone. You can turn the option off at any time in the app's Settings, which remains fully usable without it.</p>
+
+    <h3>How do I delete all my data?</h3>
+    <p>Uninstall the app: since everything is local, this erases all of your data. Export a backup first if you want to keep it.</p>
+
+    <h2>Privacy</h2>
+    <p>Memoria collects no data. The details are in the <a href="../">privacy policy</a>.</p>
+  </section>
+
+  <footer>
+    <p>Memoria — application iOS 100 % locale. Aucune donnée n'est collectée, transmise ou revendue.</p>
+  </footer>
+</div>
+<script>
+  document.querySelectorAll('.lang-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var code = btn.dataset.lang;
+      document.querySelectorAll('.lang').forEach(function (s) { s.hidden = s.id !== 'lang-' + code; });
+      document.querySelectorAll('.lang-btn').forEach(function (b) { b.classList.toggle('is-active', b === btn); });
+      document.documentElement.lang = code;
+    });
+  });
+  (function () {
+    if ((navigator.language || 'fr').toLowerCase().indexOf('fr') !== 0) {
+      var btn = document.querySelector('.lang-btn[data-lang="en"]');
+      if (btn) btn.click();
+    }
+  })();
+</script>
+</body>
+</html>
